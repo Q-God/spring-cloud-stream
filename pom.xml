@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>kafka-batch-sample</module>
+        <module>kafka-native-serialization</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

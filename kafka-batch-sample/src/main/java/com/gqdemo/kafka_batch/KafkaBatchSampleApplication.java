@@ -35,26 +35,6 @@ public class KafkaBatchSampleApplication {
     }
 }
 
-//@Configuration
-//class KafkaConfig {
-//    @Value("${spring.kafka.bootstrap-servers}")
-//    private String bootstrapServerAddress;
-//
-//    private ProducerFactory<byte[], byte[]> producerFactory() {
-//        Map<String, Object> configProps = new HashMap<>();
-//        configProps.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServerAddress);
-//        configProps.put(ProducerConfig.RETRIES_CONFIG, Integer.MAX_VALUE);
-//        configProps.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
-//        configProps.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
-//
-//        return new DefaultKafkaProducerFactory<>(configProps);
-//    }
-//
-//    @Bean
-//    public KafkaTemplate<byte[], byte[]> kafkaTemplate() {
-//        return new KafkaTemplate<>(producerFactory());
-//    }
-//}
 
 class Base {
 
